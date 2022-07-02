@@ -1,0 +1,271 @@
+body { 
+    font-size: 14px;
+}
+/* I use a grid here because I can divide all the content into many sessions. */
+main {
+    display: grid;
+    grid-template-columns: 1fr;  
+}
+
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }  
+}
+
+.left-content {
+    width: 100%;
+    position: relative;
+}
+
+.left-content > img {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .left-content > img {
+        height: 100%;
+    }  
+}
+
+.left-content > p {
+    width: 80%;
+    position: absolute;
+    top: 2%;
+    left: 10%;
+    color: #fff;
+    line-height: 3.5rem;
+}
+
+@media (min-width: 600px) {
+    .left-content > p { 
+        top: 30%;
+        line-height: 4rem;
+    }
+}
+@media (min-width: 1300px) {
+    .left-content > p { 
+        font-size: 25px;
+        line-height: 5rem;
+    }
+}
+@media (min-width: 1300px) {
+    .logo > img { 
+        width: 500px;
+        height: 400px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 2000px){
+
+
+    .left-content > button { 
+        position: absolute;
+        bottom: 20%;
+        right: 10%;
+        padding: 7px;
+        font-size: 15px;
+    }
+}
+
+.discover-button {
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+    padding: 7px;
+    font-size: 15px;
+}
+@media (min-width: 1300px) {
+    .left-content > button { 
+    position: absolute;
+    bottom: 25%;
+    right: 10%;
+    padding: 24px;
+    font-size: 22px;
+}
+
+}
+    @media (min-width: 2100px) {
+        .left-content > button {
+            bottom: 45%;
+        }
+    }
+ 
+.triangle-icon {
+    width: 13px;
+    height: 13px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+ 
+}
+/* I use animation for the add-to-cart button because I want the user to pay attention to the buying action. */
+.logostyle {
+    
+    animation:mymove 4s 1;
+    position:relative;
+}
+
+@keyframes mymove
+ {
+   0% {
+      top:200px;
+   }
+   
+   25% {
+      top:500px;
+   }
+   
+   75% {
+      top:90px;
+   }
+   
+   100% {
+      top:400px;
+   }
+
+}
+
+@-webkit-keyframes mymove 
+ {
+   0% {
+      top:100px;
+   }
+   
+   25% {
+      top:200px;
+   }
+   
+   75% {
+      top:50px;
+   }
+   
+   100% {
+      top:400px;
+   }
+
+}
+.options-one {
+    display: flex;
+    border-top: none;
+    border-right: none;
+    align-items: center;
+    justify-content: center;
+}
+.styling-one {
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    text-align: center;
+    width: 50%;
+    height: 100px;
+    border-color: #752b82;
+    color:#752b82;
+    border-width: thick;
+    font-size:x-large;
+    font-weight: 900;
+}
+.options-two {
+    display: flex;
+    border-top: none;
+    border-right: none;
+    align-items: center;
+    justify-content: center;
+}
+.styling-two {
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    text-align: center;
+    width: 50%;
+    height: 100px;
+    border-color: #752b82;
+    color:#752b82;
+    border-width: thick;
+    font-size:x-large;
+    font-weight: 900;
+}
+.options-three {
+    display: flex;
+    border-top: none;
+    border-right: none;
+    align-items: center;
+    justify-content: center;
+}
+.styling-three {
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    text-align: center;
+    width: 50%;
+    height: 100px;
+    border-color: #752b82;
+    color:#752b82;
+    border-width: thick;
+    font-size:x-large;
+    font-weight: 900;
+}
+.options-four {
+    display: flex;
+    border-top: none;
+    border-right: none;
+    align-items: center;
+    justify-content: center;
+}
+.styling-four {
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    text-align: center;
+    width: 50%;
+    height: 100px;
+    border-color: #752b82;
+    color:#752b82;
+    border-width: thick;
+    font-size:x-large;
+    font-weight: 900;
+}
+.logostyle {
+    width: 320px;
+    height: 200px;
+    
+}
+.intro {
+    font-size: 18px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+}
+.foot {
+    background-color: #752b82;
+    color:#752b82;
+    margin-top: 20px;
+    height: 140px;
+}
+.copyright-text {
+    justify-content: center;
+    display:flex ;
+    position: relative;
+    top: 60px;
+    text-align: center;
+margin-left: 15px;
+padding-top: 20px;
+color: #ffff
+}
+.copy-right-icon{
+    justify-content: center;
+    display:flex ;
+    position: relative;
+    top: 80px;
+    text-align: center;
+margin-left: 15px;
+padding-top: 20px;
+color: #ffff
+
+
+}
+.words {
+    color: #ffff;
+}

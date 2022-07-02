@@ -1,0 +1,165 @@
+header {
+    background-color: #752b82;
+    color:black;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    font-size: larger;
+    font-weight: bold;
+    border: 2px solid #d5df2a;
+    padding: 20px;
+    margin: 10px;
+    background-color: #d5df2a;
+    width: 500px;
+    text-align: center;
+    border-radius: 15px;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    border-radius: 15px
+    
+}
+    .fa-magnifying-glass {
+        border:1px solid #d5df2a;
+        padding: 2px;
+        background-color:#d5df2a ;
+    
+}
+    .photo-cake {
+        height: 200px;
+        width: 200px;
+        margin-top: 20px;
+}
+    
+    .price {
+        grid-area: c;
+        display: flex;
+        flex-flow: column;
+        padding-top: 20px;
+      
+}
+    .price-text {
+        font-size: 22px;
+        font-weight: bold;
+}
+    .list-info {
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: bold;
+        line-height: 2rem;
+}
+    .cake-photo {
+        grid-area: a;
+        margin-right: 3px;
+        border-right: 2px ;
+}
+
+    .info {
+        grid-area: b;
+}
+    .design-button {
+        background-color: #d5df2a;
+        text-align: center;
+        padding: 15px;
+        border: none;
+        font-weight: bold;
+        animation-name: addcart;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+}
+/* I use animation for the add-to-cart button because I want the user to pay attention to the buying action. */
+    @keyframes addcart {
+        0% { font-size: 1rem;}
+        50% { font-size: 1.5rem;}
+        100% { font-size: 1rem;}
+}
+    .design-firstbutton {
+        background-color: #752b82;
+        text-align: center;
+        padding: 15px;
+        border: none; 
+        color: #ffff;
+        font-size: 18px;
+        align-items: center;
+        position: relative;
+        left: 10%;
+}
+    .price-text {
+        text-align: center;
+}
+    .sung-photo {
+        margin-right: 3px;
+        border-right: 2px ;
+}
+    .photo-sung {
+            height: 200px;
+            width: 200px;
+            margin-top: 20px;
+}
+    
+    .product {
+        display: grid;
+        border-bottom: 2px solid #752b82;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "a b"
+            "c b";
+}
+
+    @media (min-width: 600px) {
+        .product {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "a b c";
+        }
+}
+    @media (min-width: 1300px) {
+        .info > ul {
+            font-size: 25px;
+        }
+}
+    @media (min-width: 1300px) {
+        .header > div {
+            font-size: 25px;
+        }
+}
+    @media (min-width: 1300px) {
+        .search-box > input {
+            padding: 7px 8px;
+        }
+}
+
+    .foot {
+        background-color: #752b82;
+        color:#752b82;
+        margin-top: 20px;
+        height: 140px;
+}
+    .copyright-text {
+        justify-content: center;
+        display:flex ;
+        position: relative;
+        top: 60px;
+        text-align: center;
+    margin-left: 15px;
+    padding-top: 20px;
+    color: #ffff
+}
+    .copy-right-icon{
+        justify-content: center;
+        display:flex ;
+        position: relative;
+        top: 80px;
+        text-align: center;
+    margin-left: 15px;
+    padding-top: 20px;
+    color: #ffff
+}
+    .words {
+        color: #ffff;
+}
